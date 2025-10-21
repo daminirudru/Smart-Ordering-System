@@ -1,0 +1,30 @@
+{
+  "name": "smart-ordering-system",
+  "version": "1.0.0",
+  "description": "A full-stack MERN application for digital food ordering system with real-time order tracking",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-server": "npm install --prefix backend",
+    "install-client": "npm install --prefix frontend",
+    "install-all": "npm run install-server && npm run install-client"
+  },
+  "keywords": [
+    "mern",
+    "react",
+    "nodejs",
+    "express",
+    "mongodb",
+    "ordering-system",
+    "restaurant",
+    "food-delivery"
+  ],
+  "author": "Smart Ordering Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
